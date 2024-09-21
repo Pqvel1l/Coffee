@@ -1,0 +1,55 @@
+.maintext {
+  color: blue;
+}
+#textinp{
+  color: pink;
+}
+div b, div p {
+  color: green;
+}
+/* div
+ .name-class
+  #id
+div p*/
+.main-link {
+  color: red;
+  text-decoration: overline;
+}
+.main-link:hover {
+  color: blue;
+  text-decoration: none;
+  cursor: pointer;
+}
+.main-link:active {
+  text-decoration: line-through;
+
+}
+.main-link:active{
+  color: grey;
+}
+input:focus{
+  color:red;
+}
+input {color:blue}
+input:disabled{color:yellow}
+
+p.text:not(empty){
+  color: grey;
+}
+#some_id::after{
+  content: 'Example text'
+  color: red;
+}
+p.text:not(empty)::before{
+  color: grey;
+  content: attr(title);
+}
+/*p.main-link::first-letter{
+ color:yellow;
+}*/
+p.main-link::first-line{
+  color:green;
+}
+p:last-of-type {
+  text-decoration: line-through;
+}
