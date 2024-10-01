@@ -22,9 +22,10 @@
 .title-a {/* Стиль для названия */
   color: #fff;
   text-align: center;
-  font-size: 2vh;
+  font-size: 5vh;
   font-family: "Poiret One", sans-serif;
-  font-weight: bold;
+  font-weight:900;
+  padding-bottom: 3vh;
 }
 #header{
   width: 100%;
@@ -32,6 +33,9 @@
   background: #ffffff;
   color: #000000;
   float: right;
+  z-index: 10;
+  position: relative;
+  
 }
 /* Тут картинка */
 .coffee-header { 
@@ -41,6 +45,11 @@
 }
 .navbar {
   line-height: 100%;
+  z-index: 1.2;
+  position: inherit;
+}
+#nav {
+  z-index: 1.2;
 }
 #nav ul {
   list-style: none;
@@ -50,6 +59,8 @@
   font-size: 1.3vh;
   font-family: "Poiret One", sans-serif;
   text-align: center;
+  position: inherit;
+  
 }
 #nav li {
   display: inline-block;
@@ -79,10 +90,13 @@
 /* футер - низ */
 #footer {
   float: left;
+  position: relative;
   width: 100%;
   height: 15%;
   background: #000000;
   line-height: 140px;
+  z-index: 10;
+  
 }
 .footer-text-a {
   color: #fff;
@@ -104,6 +118,8 @@
    text-align: center;
    color: #fff;
    padding-left: 10px;
+   position: relative;
+   z-index: 1.3;
    /* Для перемещения текста*/
  }
 .info ul {
@@ -141,20 +157,76 @@
   margin-top: 3px;
   line-height: 2em;
 }
-.container {
-  background: no-repeat url('https://img.goodfon.com/original/1920x1200/7/d2/kofe-kofeinye-zerna-koritsa.jpg') 50% 50%;
-  background-size: 100% auto; 
-  text-align: center;
-   color: white;
-   float: center;
- }
-.container-1 {
-  background: no-repeat url('https://img.goodfon.com/original/1920x1200/7/d2/kofe-kofeinye-zerna-koritsa.jpg') 50% 50%;
-  background-size: 100% auto;
-  text-align: center;
-  filter: blur();
-  color: white;
+.bg-image-blur-1 {
+  background: no-repeat url('/img/coffeex1.jpeg') 50% 50%;
+  background-size: cover; 
+  filter: blur(1.2vh);
+  width: 100%;
+  height: 65vh;
+  position:absolute;
+  z-index: 1;
+  background-attachment: scroll;
+  /* margin-top: 2vh; */
+  }
+.bg-text-1 {
   float: center;
+  text-align: center;
+  color:white;
+  z-index: 4;
+  position: relative;
+  padding-top:20vh;
+  padding-bottom: 15vh;
+}
+.menu-button {
+  background-color: #000;
+  border-radius: 5px;
+  padding: 10px;
+    color: #fff;
+      font-size: 1.3vh;
+      font-family: "Poiret One", sans-serif;
+}
+.bg-image-blur-2 {
+  background: no-repeat url('../img/coffee2.jpg') 50% 50%;
+  background-size: cover;
+    filter: blur(1.2vh);
+    width: 100%;
+    height: 65vh;
+    position: absolute;
+    z-index: 1;
+    background-attachment:scroll;
+}
+.bg-text-2 {
+  float: center;
+  text-align: center;
+  color: white;
+  z-index: 4;
+  position: relative;
+  padding-top: 20vh;
+  padding-bottom: 15vh;
+}
+.bg-image-blur-3 {
+  background: no-repeat url('../img/coffee.png') 50% 50%;
+  background-size: cover;
+  filter: blur(1.2vh);
+  width: 100%;
+  height: 65vh;
+  position: absolute;
+  z-index: 1;
+  background-attachment: scroll;
+}
+
+.bg-text-3 {
+  float: center;
+  text-align: center;
+  color: white;
+  z-index: 4;
+  position: relative;
+  padding-top: 20vh;
+  padding-bottom: 15vh;
+}
+.main {
+  position: relative;
+  z-index: 9;
 }
  /* Тут всякие стили, которые могут пригодиться! */
 /* #main {
